@@ -258,14 +258,21 @@ a{
     background-color: #fff;
     margin-right: 15px;
     margin-bottom: 15px;
+    position: relative;
 }
 /* 将父盒子设置宽度为 li自身宽度+边距宽度 */
 .box-bd ul{
     width: 1225px;
 }
 
-.box-bd ul li img{
+.box-bd ul li > img{
     width: 100%;
+}
+
+.box-bd ul li em{
+    position: absolute;
+    top: 4px;
+    right: -4px;
 }
 
 .box-bd ul li h4{
